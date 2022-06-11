@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" href="./img/Vector (9).png">
+    <title>Qpick</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .header{
+            font-size: 15px;
+        }
+        body{
+            width: 1440px;
+            height: 1280px;
+            padding: 0 165px;
+            background-color:#EAEAEA ;
+            font-size: 15px;
+            z-index: 1;
+        }
+        .phoneSelector{
+            margin-left: 80px;
+            font-size: 1em;
+        }
+        .logo{
+            font-size: 1.6em;
+            font-family: 'Montserrat';
+            font-weight: 700;
+        }
+        .header{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            position: fixed;
+            z-index: 3;
+            background-color:#EAEAEA ;
+        }
+        .img1{
+            position: absolute;
+            left: 150px;
+        }
+        select{
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        select:hover{
+            cursor: pointer;
+        }
+        .img2{
+            position: absolute;
+            left: 1000px;
+        }
+        .select{
+           font-size: 1.3em;
+           position: absolute;
+           top: 89px;
+           left: 165px;
+           color: #1C1C27;
+           font-family: 'Montserrat';
+        }
+        .select1{
+            font-size: 1.3em;
+           position: absolute;
+           top: 134px;
+           left: 165px;
+           color: #838383;
+           font-family: 'Montserrat';
+        }
+       .card1{
+        width: 350px;
+        height: 407px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        top: 178px;
+        left: 165px;
+       }
+       .img3{
+        position: absolute;
+width: 219.61px;
+height: 237.45px;
+left: 65px;
+top: 15px;
+
+       }
+       .img4{
+        position: absolute;
+        top: 15px;
+        left: 22px;
+       }
+       .img5{
+        position: absolute;
+        top: 353px;
+        left: 20px;
+       }
+       .img6{
+        position: absolute;
+        top: 307px;
+        left: 271px;
+
+       }
+       .img71{
+        position: absolute;
+        top: 328px;
+        left: 278px;
+       }
+       .p1{
+        position: absolute;
+width: 27px;
+height: 21px;
+left: 55px;
+top: 354px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.1em;
+line-height: 21px;
+color: #838383;
+
+       }
+       .p2{
+        position: absolute;
+width: 144px;
+height: 21px;
+left: 21px;
+top: 307px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.1em;
+line-height: 21px;
+color: #1C1C27;
+       }
+       .card2{
+        width: 350px;
+        height: 407px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        top: 178px;
+        left: 545px;
+       }
+       .card3{
+        width: 350px;
+        height: 407px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        top: 178px;
+        left: 925px;
+       }
+       .card4{
+        width: 350px;
+        height: 407px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        top: 681px;
+        left: 165px;
+       }
+       .img7{
+        position: absolute;
+        top: 23px;
+        left: 304px;
+       }
+       .card5{
+        width: 350px;
+        height: 407px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        position: absolute;
+        top: 681px;
+        left: 545px;
+       }
+       .img8{
+        position: absolute;
+        top: 307px;
+        left: 249px;
+       }
+       .DownHeader{
+        font-size: 15px;
+        position: absolute;
+width: 1110px;
+height: 149px;
+top: 1131px;
+left: 165px;
+bottom: -380px;
+background-color: white;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+       }
+       .img9{
+        position: absolute;
+        top: 29px;
+        left: 909px;
+       }
+       .img10{
+        position: absolute;
+        top: 91px;
+        left: 622px;
+       }
+       .Logo1{
+        position: absolute;
+        top: 29px;
+        left: 29px;
+        font-size: 1.6em;
+        font-weight: 700;
+        font-family: 'Montserrat';
+       }
+       ul{
+        height: 82px;
+        list-style: none;
+        position: absolute;
+        top: 33px;
+        left: 347px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       }
+       ul li button{
+          background-color: transparent;
+          border: none;
+          font-size: 1.1em;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          
+       }
+       .p3{
+        position: absolute;
+        top: 34px;
+        left: 622px;
+        font-family: 'Montserrat';
+        font-size: 1.1em;
+        font-weight: 400;
+       }
+       .p4{
+        position: absolute;
+        top: 91px;
+        left: 655px;
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: 'Montserrat';
+       }
+       .p5{
+        position: absolute;
+        top: 91px;
+        left: 698px;
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: 'Montserrat';
+        color: #FFA542;
+       }
+       .p6{
+        position: absolute;
+        top: 91px;
+        left: 741px;
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: 'Montserrat';
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <h1 class="logo">Qpick</h1>
+            <img class="img1" src="./img/Vector (2).png" alt="">
+            <span class="phoneSelector">Виберіть модель телефонy
+                <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </span>
+            <img class="img2" src="./img/Group 26.png" alt="">
+        </div>
+        <p class="select">Вибране</p>
+        <p class="select1">Навушники</p>
+        <div class="card1">
+            <img class="img3" src="./img/Image (6).png" alt="">
+            <img class="img4" src="./img/Vector (5).png" alt="">
+            <img class="img5" src="./img/Vector (6).png" alt="">
+            <img class="img6" src="./img/2927 ₸.png" alt="">
+            <img class="img71" src="./img/3527 ₸.png" alt="">
+            <p class="p1">4.7</p>
+            <p class="p2">Apple BYZ S852I</p>
+        </div>
+        <div class="card2">
+            <img class="img3" src="./img/Image (7).png" alt="">
+            <img class="img4" src="./img/Vector (5).png" alt="">
+            <img class="img5" src="./img/Vector (6).png" alt="">
+            <img class="img6" src="./img/2327 ₸.png" alt="">
+            <p class="p1">4.5</p>
+            <p class="p2">Apple EarPods</p>
+        </div>
+        <div class="card3">
+            <img class="img3" src="./img/Image (8).png" alt="">
+            <img class="img4" src="./img/Vector (7).png" alt="">
+            <img class="img5" src="./img/Vector (6).png" alt="">
+            <img class="img6" src="./img/2327 ₸.png" alt="">
+            <p class="p1">4.5</p>
+            <p class="p2">Apple EarPods</p>
+        </div>
+        <div class="card4">
+            <img class="img3" src="./img/Image (9).png" alt="">
+            <img class="img4" src="./img/Vector (8).png" alt="">
+            <img class="img5" src="./img/Vector (6).png" alt="">
+            <img class="img7" src="./img/Vector (9).png" alt="">
+            <img class="img6" src="./img/9527 ₸.png" alt="">
+            <p class="p1">4.7</p>
+            <p class="p2">Apple AirPods</p>
+        </div>
+        <div class="card5">
+            <img class="img3" src="./img/Image (10).png" alt="">
+            <img class="img4" src="./img/Vector (8).png" alt="">
+            <img class="img5" src="./img/Vector (6).png" alt="">
+            <img class="img8" src="./img/6527 KZT.png" alt="">
+            <p class="p1">4.7</p>
+            <p class="p2">GERLAX GH-04</p>
+        </div>
+         
+        <div class="DownHeader">
+            <img class="img9" src="./img/Social.png" alt="">
+            <img class="img10" src="./img/Group.png" alt="">
+            <div class="Logo1">Qpick</div>
+            <ul>
+                <li><button>Вибране</button></li>
+                <li><button>Корзина</button></li>
+                <li><button>Контакти</button></li>
+            </ul>
+            <p class="p3">Умови сервера</p>
+            <p class="p4">Каз</p>
+            <p class="p5">Укр</p>
+            <p class="p6">Eng</p>
+        </div>
+    </div>
+</body>
+</html>
